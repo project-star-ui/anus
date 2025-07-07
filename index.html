@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Amazing Body: The Digestive System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #FF9F1C;
+            --secondary-color: #2EC4B6;
+            --accent-color: #E71D36;
+            --light-color: #FDFFFC;
+            --dark-color: #011627;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(46, 196, 182, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 30%, rgba(231, 29, 54, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 30% 80%, rgba(255, 159, 28, 0.1) 0%, transparent 20%);
+            background-attachment: fixed;
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-fast {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .floating-slow {
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .info-card {
+            transition: all 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Animated background elements -->
+    <div class="fixed top-1/4 left-1/4 w-12 h-12 rounded-full bg-red-200 opacity-30 floating-fast"></div>
+    <div class="fixed top-2/3 left-3/4 w-16 h-16 rounded-full bg-yellow-200 opacity-30 floating-slow"></div>
+    <div class="fixed top-1/3 right-1/4 w-20 h-20 rounded-full bg-blue-200 opacity-30 floating"></div>
+    
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-8 relative">
+            <h1 class="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-red-500 mb-4">
+                The Amazing Digestive System
+            </h1>
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/971561c9-ce43-4f6a-bfb9-318f5365251a.png" alt="Colorful cartoon illustration of digestive system with mouth, stomach, intestines leading to the anus" 
+                 class="mx-auto rounded-xl shadow-lg border-4 border-white mb-6" />
+            <div class="absolute -top-4 left-4 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center floating-slow shadow-md">
+                <i class="fas fa-question text-3xl text-blue-600"></i>
+            </div>
+            <div class="absolute -bottom-4 right-4 w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center floating shadow-md">
+                <i class="fas fa-lightbulb text-3xl text-yellow-600"></i>
+            </div>
+        </header>
+
+        <main class="max-w-4xl mx-auto">
+            <section class="bg-white rounded-3xl p-6 mb-8 shadow-xl relative overflow-hidden border-2 border-amber-200">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-amber-100 rounded-full"></div>
+                <h2 class="text-3xl font-bold text-amber-600 mb-4 relative z-10">
+                    <i class="fas fa-info-circle mr-2"></i> All About the Anus
+                </h2>
+                <div class="text-lg leading-relaxed relative z-10 space-y-4">
+                    <p>The anus is the last part of our digestive system and plays a very important role in our body!</p>
+                    
+                    <div class="flex flex-col md:flex-row gap-6 items-center my-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/348692e7-bbd2-420f-afa0-97720dd9006a.png" alt="Diagram showing the position of anus in the digestive system with arrows showing path from mouth to anus" 
+                             class="w-full md:w-1/3 rounded-xl border-4 border-white shadow-md floating" />
+                        <div class="w-full md:w-2/3">
+                            <p>As food travels through our body (we call this digestion), it goes through many organs:</p>
+                            <ol class="list-decimal list-inside mt-2 space-y-2">
+                                <li>The mouth (where food enters)</li>
+                                <li>The esophagus (the food tube)</li>
+                                <li>The stomach (where food gets mixed)</li>
+                                <li>The small intestine (where nutrients are absorbed)</li>
+                                <li>The large intestine (where water is removed)</li>
+                                <li>The anus (where waste leaves the body)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <p>The anus is like the exit door for the food that our body cannot use. It helps us stay healthy by getting rid of waste in a safe and clean way.</p>
+                </div>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-3xl font-bold text-blue-600 mb-6 text-center">
+                    <i class="fas fa-star mr-2"></i> Fun Facts
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Floating fact cards -->
+                    <div class="bg-blue-50 rounded-2xl p-6 shadow-lg border-2 border-blue-100 info-card floating">
+                        <div class="flex items-start mb-3">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-brain text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-700">Smart Muscles</h3>
+                        </div>
+                        <p>The anus has two rings of muscles that are very smart! They know when to open to let waste out and when to stay closed to keep everything inside.</p>
+                    </div>
+                    
+                    <div class="bg-amber-50 rounded-2xl p-6 shadow-lg border-2 border-amber-100 info-card floating-slow">
+                        <div class="flex items-start mb-3">
+                            <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-shield-alt text-amber-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-amber-700">Body's Protection</h3>
+                        </div>
+                        <p>The anus helps protect our body by preventing harmful bacteria from entering while still letting waste exit. It's like a security guard for our digestive system!</p>
+                    </div>
+                    
+                    <div class="bg-red-50 rounded-2xl p-6 shadow-lg border-2 border-red-100 info-card floating">
+                        <div class="flex items-start mb-3">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-red-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-red-700">Special Lining</h3>
+                        </div>
+                        <p>The inside of the anus has special cells that can feel when gas (fart) is coming, so we know when we need to go to the bathroom.</p>
+                    </div>
+                    
+                    <div class="bg-green-50 rounded-2xl p-6 shadow-lg border-2 border-green-100 info-card floating-slow">
+                        <div class="flex items-start mb-3">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-hands-helping text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-green-700">Teamwork</h3>
+                        </div>
+                        <p>The anus works with the large intestine to control when we poop. When the intestine is full, it sends a message to the brain saying "Time to go to the bathroom!"</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white rounded-3xl p-6 shadow-xl mb-8 border-2 border-purple-200">
+                <h2 class="text-3xl font-bold text-purple-600 mb-4">
+                    <i class="fas fa-question-circle mr-2"></i> How It Works
+                </h2>
+                
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-full md:w-1/2">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3fae02e5-4df9-4eb2-9e9b-0a5799903b19.png" alt="Animated illustration showing how waste moves through the rectum and anus with arrows showing the direction" 
+                             class="w-full rounded-xl border-4 border-white shadow-lg floating" />
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="space-y-4 text-lg">
+                            <h3 class="text-xl font-bold text-purple-700">The Poop Process:</h3>
+                            <ol class="list-decimal list-inside space-y-2">
+                                <li>After food is digested, the leftover waste moves to the rectum (the storage area)</li>
+                                <li>Sensors in the rectum tell your brain when it's time to go to the bathroom</li>
+                                <li>When you're ready, the muscles around the anus relax</li>
+                                <li>The muscles of the rectum push the waste out through the anus</li>
+                                <li>The anus closes again after everything is out</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white rounded-3xl p-6 shadow-xl border-2 border-green-200">
+                <h2 class="text-3xl font-bold text-green-600 mb-6 text-center">
+                    <i class="fas fa-hand-holding-heart mr-2"></i> Keeping Your Anus Healthy
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-start p-4 rounded-xl bg-green-50">
+                        <div class="bg-green-100 p-3 rounded-full mr-4 text-green-600">
+                            <i class="fas fa-utensils text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-green-700 mb-2">Eat Healthy Foods</h3>
+                            <p>Fruits, vegetables, and whole grains help make your poop soft so it's easier to pass.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start p-4 rounded-xl bg-blue-50">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4 text-blue-600">
+                            <i class="fas fa-tint text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-700 mb-2">Drink Water</h3>
+                            <p>Water helps your digestive system work smoothly and prevents hard poop.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start p-4 rounded-xl bg-yellow-50">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4 text-yellow-600">
+                            <i class="fas fa-walking text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-yellow-700 mb-2">Stay Active</h3>
+                            <p>Exercise helps food move through your digestive system properly.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start p-4 rounded-xl bg-red-50">
+                        <div class="bg-red-100 p-3 rounded-full mr-4 text-red-600">
+                            <i class="fas fa-toilet text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-red-700 mb-2">Go When You Need To</h3>
+                            <p>Don't hold it in! Going to the bathroom when you feel the need helps keep everything working well.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-16 text-center text-gray-600">
+            <div class="bg-white rounded-full p-4 shadow-lg inline-block mb-4 floating">
+                <i class="fas fa-heartbeat text-red-500 text-3xl pulse"></i>
+            </div>
+            <p class="text-lg mb-2 font-bold">Our bodies are amazing!</p>
+            <p>Remember to take care of all your body parts so they can keep you healthy.</p>
+            <p class="mt-4 text-sm">Illustrations are simplified for educational purposes.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Make the info cards pulse when hovered
+        document.querySelectorAll('.info-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.classList.add('animate-pulse');
+            });
+            card.addEventListener('mouseleave', function() {
+                this.classList.remove('animate-pulse');
+            });
+        });
+        
+        // Add a fun confetti effect when page loads
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                const colors = ['#FF9F1C', '#2EC4B6', '#E71D36', '#011627'];
+                for (let i = 0; i < 50; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.style.position = 'fixed';
+                    confetti.style.width = '10px';
+                    confetti.style.height = '10px';
+                    confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.borderRadius = '50%';
+                    confetti.style.left = Math.random() * 100 + 'vw';
+                    confetti.style.top = '-20px';
+                    confetti.style.zIndex = '9999';
+                    confetti.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+                    document.body.appendChild(confetti);
+                    
+                    const animation = confetti.animate([
+                        { top: '-20px', opacity: 1 },
+                        { top: '100vh', opacity: 0 }
+                    ], {
+                        duration: Math.random() * 3000 + 2000,
+                        easing: 'cubic-bezier(0.1, 0.8, 0.8, 1)'
+                    });
+                    
+                    animation.onfinish = () => confetti.remove();
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
+
